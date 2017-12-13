@@ -10,11 +10,13 @@ var util = require('util');
 var mergeMap = require('merge-source-map');
 
 function uglify(content, file, conf) {
-  conf.fromString = true;
+
+  // conf.fromString = true;
+  delete conf.filename;
 
   if (conf.sourceMap) {
       var mapping = fis.file.wrap(file.dirname + '/' + file.filename + file.rExt + '.map');
-      conf.outSourceMap = mapping.subpath;
+      conf.sourceMap.url = mapping.subpath;
   }
 
   var ret = UglifyJS.minify(content, conf);
