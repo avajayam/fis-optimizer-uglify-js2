@@ -1,0 +1,15 @@
+{
+  "name": "fis-optimizer-uglify-js2",
+  "version": "0.2.3",
+  "description": "单纯拷贝自 https://github.com/fex-team/fis-optimizer-uglify-js, 只是更新了uglifyJS依赖版本",
+  "main": "index.js",
+  "author": "Caixiaoxing",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avajayam/fis-optimizer-uglify-js2.git"
+  },
+  "license": "MIT"
+}
